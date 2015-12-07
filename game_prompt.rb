@@ -19,7 +19,7 @@ class GamePrompt
     puts "You have #{max_no_of_guesses - no_of_guesses} left"
     # puts "You have", max_no_of_guesses - no_of_guesses, "left"
     if no_of_guesses >= max_no_of_guesses
-      puts "too bad, you couldnt guess my number", random
+      puts "Too bad, you couldnt guess my number", random
       break
     end
     guess = gets.chomp.to_i
