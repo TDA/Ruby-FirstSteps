@@ -1,7 +1,5 @@
 class DogEnhanced
   attr_accessor :age, :name
-  @name = 'Sai'
-  @age = 0
 end
 
 dog = DogEnhanced.new
