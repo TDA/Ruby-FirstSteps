@@ -15,18 +15,15 @@ class DogEnhanced < Animal
 
   # override the base class
   def age=(age)
-    if !age or age < 0
-      raise "Age cant be #{age} mister"
-    else
-      @age = age * 4
-    end
+    super
+    @age = @age * 4
   end
 
 end
 
 dog = DogEnhanced.new
 puts "Instance variables #{dog.instance_variables}"
-puts "Instance methods #{dog.methods}"
+#puts "Instance methods #{dog.methods}"
 dog.name = "rookie"
 dog.age = 1
 puts "Instance variables #{dog.instance_variables}"
