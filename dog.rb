@@ -1,4 +1,6 @@
 class Dog
+  # ruby doesnt like declaring variables inside a class,
+  # in fact, it actually counts as a CLASS VARIABLE and NOT INSTANCE VARIABLE :O
   def name=(name)
     @name = name
   end
