@@ -1,7 +1,4 @@
 class Dog
-  @name = ""
-  @age = 0
-
   def name=(name)
     @name = name
   end
@@ -10,8 +7,18 @@ class Dog
     @name
   end
 
+  def age=(age)
+    @age = age
+  end
+
+  def age
+    @age
+  end
+
 end
 
 dog = Dog.new
 dog.name = "rookie"
-puts dog.name
+dog.age = 1
+puts "#{dog.name} name"
+puts "#{dog.age} age"
