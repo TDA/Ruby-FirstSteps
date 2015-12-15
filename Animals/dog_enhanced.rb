@@ -12,6 +12,16 @@ class DogEnhanced < Animal
     # notice the # followed by @ as well for instance vars
     "#{@name} says #{message}, and is #{@age} year(s) old"
   end
+
+  # override the base class
+  def age=(age)
+    if !age or age < 0
+      raise "Age cant be #{age} mister"
+    else
+      @age = age * 4
+    end
+  end
+
 end
 
 dog = DogEnhanced.new
