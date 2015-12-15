@@ -19,5 +19,4 @@ class Animal
       @age = age
     end
   end
-
 end

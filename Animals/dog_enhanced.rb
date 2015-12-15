@@ -25,8 +25,11 @@ class DogEnhanced < Animal
 end
 
 dog = DogEnhanced.new
+puts "Instance variables #{dog.instance_variables}"
+puts "Instance methods #{dog.methods}"
 dog.name = "rookie"
 dog.age = 1
+puts "Instance variables #{dog.instance_variables}"
 puts dog.greet("woof woof")
 
 
