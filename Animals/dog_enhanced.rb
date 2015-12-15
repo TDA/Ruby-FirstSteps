@@ -1,25 +1,5 @@
-class DogEnhanced
-  # love these aut-getter/setter types :D
-  # notice the difference, we use symbols here, NOT instance var names
-  attr_reader :age, :name
-  # adding validation
-  def name=(name)
-    if name == ""
-      raise "Name cant be empty mister"
-    else
-      # instance vars start with @
-      @name = name
-    end
-  end
-
-  def age=(age)
-    if age < 0
-      raise "Age cant be #{age} mister"
-    else
-      @age = age
-    end
-  end
-
+require './animal'
+class DogEnhanced < Animal
   # notice default params/args
   def greet(message = "hello")
     # checking if overloads are possible
@@ -32,7 +12,6 @@ class DogEnhanced
     # notice the # followed by @ as well for instance vars
     "#{@name} says #{message}, and is #{@age} year(s) old"
   end
-
 end
 
 dog = DogEnhanced.new
