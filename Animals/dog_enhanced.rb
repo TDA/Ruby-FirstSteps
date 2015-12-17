@@ -14,10 +14,22 @@ class DogEnhanced < Animal
   end
 
   # override the base class
+  # age= is the name of the function/method :D
   def age=(age)
     super
     @age = @age * 4
   end
+
+  def to_s
+    # multiline print statements are so cool :D
+    # here we are using the accessors to get value of name and age :)
+    # can also use the @name @age :)
+    "Dog : {
+      Name : #{name},
+      Dog Age : #{age}
+    }"
+  end
+
 
 end
 
@@ -36,3 +48,4 @@ dog = DogEnhanced.new
 dog.name = "as"
 dog.age = 0
 puts dog.greet
+puts dog
