@@ -13,3 +13,7 @@ for a in array
   sum += a
 end
 puts sum
+
+sum = 0
+array.each{ |p| sum += p }
+puts sum
