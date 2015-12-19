@@ -1,13 +1,14 @@
-def a_method(&a_block)
+def a_method
   x = 0
   sum = 0
   while x < 5
-    sum = a_block.call(sum, x)
+    # yield is a block call, auto finds and
+    # calls the block defined for this method
+    # no need for the reference or for the explicit call
+    sum = yield sum, x
     puts sum
     x = x + 1
   end
-
-
   puts "end of the method"
 end
 
