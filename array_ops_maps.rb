@@ -19,4 +19,6 @@ partitions = file_contents.partition { |line| line.length > 15}
 p partitions[0]
 p partitions[1]
 
-
+p partitions[1].any? { |line| line.length > 5 }
+p partitions[1].all? { |line| line.length > 5 }
+p partitions[1].none? { |line| line.length < 0 }
