@@ -22,3 +22,6 @@ p partitions[1]
 p partitions[1].any? { |line| line.length > 5 }
 p partitions[1].all? { |line| line.length > 5 }
 p partitions[1].none? { |line| line.length < 0 }
+
+partitions_bools = file_contents.map { |line| line.length > 15}
+p partitions_bools
