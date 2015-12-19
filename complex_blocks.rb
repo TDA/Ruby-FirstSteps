@@ -15,7 +15,10 @@ def a_method(&a_block)
 end
 
 # looks like each 'block' is called when you add additional
-# blocks, first difference from methods
+# blocks, first difference from methods, to do this with methods,
+# we would have had to add the extra method calls to the original
+# method as well (and i still suspect inlining)
+
 a_method do |sum, x|
   # this is a block
   sum + x
@@ -26,17 +29,11 @@ a_method do |sum, x|
   sum + x * x
 end
 
-a_method do |sum, x|
-  # this is a block
-  sum - x
-end
-
-
-# still not sure about the difference
-# between this and the following
+# this is also a block
+a_method { |sum, x| sum - x }
 
 def b_method
-  # this is apparently a method that takes in a block
+  puts "this is a method that calls a method"
   x = 0
   sum = 0
   while x < 5
