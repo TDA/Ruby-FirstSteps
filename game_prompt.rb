@@ -8,6 +8,9 @@ class GamePrompt
   puts "Guess the number"
   guess = gets.chomp.to_i
   guessed_right = false
+  # basically until is a real life eg of de-moivres :D
+  # not (a OR b) == (not a) AND (not b)
+  # so until a || b == while !a and !b
   until guessed_right || no_of_guesses > max_no_of_guesses
     if guess == random
       guessed_right = true
