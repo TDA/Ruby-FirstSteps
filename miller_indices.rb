@@ -1,4 +1,6 @@
 class MillerIndices
+  attr_accessor :zoo
+
   print "x = "
   @x = gets.to_f
   puts @x
@@ -18,6 +20,8 @@ class MillerIndices
   def get_x
     print @x
   end
+
+
 
 end
 
