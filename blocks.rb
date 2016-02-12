@@ -25,8 +25,8 @@ def b_method
 end
 
 def b_block
-  # this is apparently a block
-  puts "in the block"
+  # this is apparently a method
+  puts "in the method"
 end
 
 b_method
