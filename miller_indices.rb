@@ -17,8 +17,8 @@ class MillerIndices
   #puts reci_x, reci_y, reci_z
 
   def get_x
-    print @x
-    print self.xeno
+    # print @x
+    print y
   end
 
 
@@ -28,5 +28,5 @@ end
 # puts x
 im_x = MillerIndices.new
 im_x.zoo = "ZOOOOO"
-# p im_x.get_x
+p im_x.get_x
 p im_x.zoo

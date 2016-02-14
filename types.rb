@@ -4,4 +4,6 @@ class Types
   p "sai".class
   p true.class
   p false.class
+  dance = "Dance"
+  puts "Hi class #{dance}"
 end

@@ -29,6 +29,11 @@ a_method do |sum, x|
   sum + x * x
 end
 
+
+a_method do |sum, x|
+  # this is a block
+  sum - x * x
+end
 # this is also a block
 a_method { |sum, x| sum - x }
 
