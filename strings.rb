@@ -8,3 +8,12 @@ puts "".empty?, "".nil?
 
 # equivalent to rails' blank :D
 puts "".nil? || "".empty?
+
+str = "Sa - ee - pee - cee"
+str.encode(Encoding::UTF_8)
+puts str.encoding.name
+
+# non-destructive
+puts str.encode(Encoding::ISO_8859_1).encoding.name
+puts str.encoding.name
+
