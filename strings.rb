@@ -17,3 +17,7 @@ puts str.encoding.name
 puts str.encode(Encoding::ISO_8859_1).encoding.name
 puts str.encoding.name
 
+# destructive, notice the ! after method name
+puts str.encode!(Encoding::ISO_8859_1).encoding.name
+puts str.encoding.name
+
