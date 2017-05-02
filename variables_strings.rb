@@ -1,6 +1,6 @@
 class Variables_Strings
   hello = "ss"
-  puts hello, "\n\n" # puts seems to put a newline after the sentence by def
+  puts hello, "\n\n" # puts seems to put a newline after the sentence by default
   print hello.upcase # print doesnt
   puts
   hello = 'Ahoy '
