@@ -7,4 +7,4 @@
 
 ## Reflections a year and a half later
 1. Ruby (with Rails) has now become my profession, and is my principle language.
-2. Funny how things you learg n for fun can help you in a pinch.
+2. Funny how things you learn for fun can help you in a pinch.

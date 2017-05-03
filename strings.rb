@@ -21,3 +21,10 @@ puts str.encoding.name
 puts str.encode!(Encoding::ISO_8859_1).encoding.name
 puts str.encoding.name
 
+# string indexing
+str = "Hello World!"
+puts str[str.size-1] # first character from the end of the string
+puts str[-1] # first character from the end of the string
+puts str[-2] # second last character
+puts str[0] # first character
+
