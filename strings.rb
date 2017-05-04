@@ -28,3 +28,7 @@ puts str[-1] # first character from the end of the string
 puts str[-2] # second last character
 puts str[0] # first character
 
+# ruby also allows ranges
+puts str[0, 7]
+# negatives with length
+puts str[-6, 6]
