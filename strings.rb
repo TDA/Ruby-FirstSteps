@@ -32,3 +32,16 @@ puts str[0] # first character
 puts str[0, 7]
 # negatives with length
 puts str[-6, 6]
+
+
+def serial_average(strings)
+  serial = strings[0, 3]
+  num1 = strings[4, 5]
+  num2 = strings[-5, 5]
+  avg = num1.to_f + num2.to_f
+  avg /= 2
+  avg = avg.round(2)
+  puts "#{serial}-#{avg}"
+end
+
+serial_average('002-10.00-20.00')
