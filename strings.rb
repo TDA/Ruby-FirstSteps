@@ -45,3 +45,10 @@ def serial_average(strings)
 end
 
 serial_average('002-10.00-20.00')
+
+# string changes in ruby 1.9
+money = "¥1000"
+puts money.each_byte {|x| p x} # first char represented by two bytes
+puts money.each_char {|x| p x} # prints each character
+puts money.each_codepoint {|x| p x} # prints each codepoint
+puts money.each_line {|x| p x} # prints each line, for multiline strings
